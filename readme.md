@@ -1,6 +1,6 @@
-# Projet Web Exemple
+# CMN CV
 
-Ce projet contient une structure de base pour une page web simple, incluant des éléments HTML (basique), du CSS (basique), et un script JavaScript (basique).
+Ce projet contient le CV de Menguy Charlène sous forme html.
 
 ## Structure du projet
 
