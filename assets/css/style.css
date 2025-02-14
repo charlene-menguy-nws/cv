@@ -1,27 +1,38 @@
 /* Ajout du fond global */
 body {
-    background-color: #D9D2C5; /* Fond global beige */
-    color: #000000;
+    background-color: #ffffff; /* Fond global blanc */
+    color: #040404;
     font-family: 'Roboto', 'Futura', sans-serif;
 }
 
 /* Structure générale du CV */
 main {
-    max-width: 900px;
+    max-width: 100%;
     margin: 30px auto;
     background: #FFFFFF;
-    padding: 40px;
-    border-radius: 10px;
+    padding: 20px;
+
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Encadrement des sections */
-section {
-    background-color: #575757;
-    color: #FFFFFF;
+.section-blanche {
+    background-color: #ffffff;
+    color: #000000;
     padding: 20px;
-    border-radius: 5px;
     margin-bottom: 20px;
+}
+
+.section-grise {
+    background-color: #C6C6C6;
+    color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Enlever les bordures */
+.section-blanche, .section-grise {
+    border-radius: 0;
 }
 
 h2, h3 {
@@ -29,38 +40,47 @@ h2, h3 {
 }
 
 h2 {
-    font-size: 1.8em;
-    color: #FFFFFF;
+    font-size: 1.4em;
+    color: #575757;
     border-bottom: 2px solid #C6C6C6;
     padding-bottom: 5px;
 }
 
 h3 {
-    font-size: 1.4em;
-    color: #C6C6C6;
+    font-size: 1em;
+    color: #575757;
 }
 
 /* Photo et présentation */
 #photo {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-around;
+    align-items: flex-start;
     padding: 20px;
-    background: #575757;
-    color: #FFFFFF;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#photo div {
+    width:50%;
+    border : 0px solid #000000;
 }
 
 #photo h1 {
     font-size: 2em;
     color: #FFFFFF;
+    text-align: center;
+}
+
+#photo p {
+    margin-top: 10px;
 }
 
 #myPhoto {
-    width: 150px;
-    
-    
+    width: 350px; 
 }
 
 /* Navigation */
@@ -69,7 +89,7 @@ nav ul {
     justify-content: center;
     gap: 20px;
     list-style: none;
-    background-color: #575757;
+    background-color: #c6c6c6;
     padding: 10px;
     border-radius: 5px;
 }
@@ -94,22 +114,26 @@ nav ul li a:hover {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
+    margin-bottom:30px;
 }
 
 #info ul {
     list-style: none;
     padding: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #info ul li {
-    padding: 5px;
-    font-weight: bold;
+    padding: 3px;
+    font-weight: medium;
 }
 
 /* Pied de page */
 footer {
     text-align: center;
-    background-color: #575757;
+    background-color: #C6C6C6;
     color: #FFFFFF;
     padding: 20px;
     margin-top: 40px;
