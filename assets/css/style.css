@@ -1,8 +1,8 @@
-/* Ajout du fond global */
+
 body {
     background-color: #ffffff; /* Fond global blanc */
     color: #040404;
-    font-family: 'Roboto', 'Futura', sans-serif;
+    font-family: 'Roboto', 'Futura';
 }
 
 /* Structure générale du CV */
@@ -20,14 +20,18 @@ main {
     background-color: #ffffff;
     color: #000000;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
 }
 
 .section-grise {
-    background-color: #C6C6C6;
+    background-color: #ffffff;
     color: #000000;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
 }
 
 /* Enlever les bordures */
@@ -42,7 +46,7 @@ h2, h3 {
 h2 {
     font-size: 1.4em;
     color: #575757;
-    border-bottom: 2px solid #C6C6C6;
+    border-bottom: 2px solid #F5F3EF;
     padding-bottom: 5px;
 }
 
@@ -54,34 +58,52 @@ h3 {
 /* Photo et présentation */
 #photo {
     display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
+    justify-content:space-between;
+    align-items: center;
     padding: 20px;
     background: #ffffff;
     color: #000000;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
+    margin-right: 140px;
 }
 
 #photo div {
     width:50%;
-    border : 0px solid #000000;
+ 
 }
 
 #photo h1 {
-    font-size: 2em;
-    color: #000000
-;
-    text-align: center;
+    font-size: 3em;
+    color: #000000;
+    text-align: center
 }
 
 #photo p {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 #myPhoto {
-    width: 350px; 
+    width: 450px; 
+}
+
+#textePresentation {
+    margin-left: 30px; 
+}
+
+#textePresentation h1 {
+    font-size: 3em;
+    color: #000000;
+    text-align:justify;
+    width: 100%; 
+    margin-top: 0px; 
+    padding-top: 10px; 
+}
+
+#textePresentation p {
+    text-align:justify; 
+    margin-top: 60px
 }
 
 /* Navigation */
@@ -90,7 +112,7 @@ nav ul {
     justify-content: center;
     gap: 20px;
     list-style: none;
-    background-color: #c6c6c6;
+    background-color: #F5F3EF;
     padding: 10px;
     border-radius: 5px;
 }
@@ -111,7 +133,7 @@ nav ul li a:hover {
 
 /* Informations de contact */
 #info {
-    background: #C6C6C6;
+    background: #F5F3EF;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -131,10 +153,86 @@ nav ul li a:hover {
     font-weight: medium;
 }
 
+/* Burger Menu */
+.burger-menu {
+    position: absolute;
+    top: 20px; /* Ajustez la marge supérieure si nécessaire */
+    right: 20px; /* Ajustez la marge droite si nécessaire */
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.burger-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #c6c6c6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.menu a {
+    color: #FFFFFF; /* Couleur initiale des liens */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: 0.3s;
+    white-space: nowrap; /* Empêche la coupure des mots */
+}
+
+.menu a:hover {
+    color: #F5F3EF;
+    background-color: #333333;
+    border-radius: 3px;
+}
+
+#menu-toggle:checked + .burger-icon + .menu {
+    display: flex;
+}
+
+/* Flèche de retour en haut */
+.back-to-top {
+    display: none; /* Cachée par défaut */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #555555;
+}
+
+/* Rendre la flèche visible lorsqu'on défile vers le bas */
+.show-back-to-top {
+    display: block;
+}
+
 /* Pied de page */
 footer {
     text-align: center;
-    background-color: #C6C6C6;
+    background-color: #F5F3EF;
     color: #FFFFFF;
     padding: 20px;
     margin-top: 40px;
