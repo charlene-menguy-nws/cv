@@ -1,11 +1,24 @@
 
 body {
-    background-color: #ffffff; /* Fond global blanc */
-    color: #040404;
-    font-family: 'Roboto', 'Futura';
+    background-color: #ffffff;
 }
 
-/* Structure générale du CV */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-image: url(/assets/images/parallax.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#000000;
+
+}
+
+
 main {
     max-width: 100%;
     margin: 30px auto;
@@ -22,11 +35,12 @@ main {
     padding: 20px;
     margin-bottom: 30px;
     margin-top: 30px;
+    text-align: align;
 
 }
 
-.section-grise {
-    background-color: #ffffff;
+.section-beige {
+    background-color: #F5F3EF;
     color: #000000;
     padding: 20px;
     margin-bottom: 30px;
@@ -35,7 +49,7 @@ main {
 }
 
 /* Enlever les bordures */
-.section-blanche, .section-grise {
+.section-blanche, .section-beige {
     border-radius: 0;
 }
 
@@ -75,9 +89,12 @@ h3 {
 }
 
 #photo h1 {
+    display: flex;
+    justify-content:left;
     font-size: 3em;
     color: #000000;
-    text-align: center
+    text-align:center
+    
 }
 
 #photo p {
@@ -153,11 +170,11 @@ nav ul li a:hover {
     font-weight: medium;
 }
 
-/* Burger Menu */
+
 .burger-menu {
     position: absolute;
-    top: 20px; /* Ajustez la marge supérieure si nécessaire */
-    right: 20px; /* Ajustez la marge droite si nécessaire */
+    top: 20px; 
+    right: 20px; 
 }
 
 #menu-toggle {
@@ -187,12 +204,12 @@ nav ul li a:hover {
 }
 
 .menu a {
-    color: #FFFFFF; /* Couleur initiale des liens */
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
     padding: 8px 12px;
     transition: 0.3s;
-    white-space: nowrap; /* Empêche la coupure des mots */
+    white-space: nowrap; 
 }
 
 .menu a:hover {
@@ -205,9 +222,9 @@ nav ul li a:hover {
     display: flex;
 }
 
-/* Flèche de retour en haut */
+
 .back-to-top {
-    display: none; /* Cachée par défaut */
+    display: none; 
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -224,12 +241,12 @@ nav ul li a:hover {
     background-color: #555555;
 }
 
-/* Rendre la flèche visible lorsqu'on défile vers le bas */
+
 .show-back-to-top {
     display: block;
 }
 
-/* Pied de page */
+
 footer {
     text-align: center;
     background-color: #F5F3EF;
@@ -238,3 +255,4 @@ footer {
     margin-top: 40px;
     border-radius: 5px;
 }
+
