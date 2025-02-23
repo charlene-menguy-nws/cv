@@ -19,4 +19,3 @@ window.addEventListener('scroll', function() {
         backToTop.classList.remove('show-back-to-top');
     }
 });
-

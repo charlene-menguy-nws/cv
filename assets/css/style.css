@@ -131,7 +131,7 @@ h3 {
 #myPhoto {
     width: 450px;
     margin-top: 30px;
-    margin-right: 200px;
+    margin-right: 180px;
     margin-left: 100px;
 }
 
@@ -301,11 +301,13 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 @media (max-width: 768px) {
     
     header {
-      flex-direction: column;
+      flex-direction: column-reverse;
       text-align: center;
+      margin-bottom: 40px;
     }
     
    
@@ -313,12 +315,14 @@ img {
       width: 80%;
       max-width: 300px;
       margin: 20px auto;
+      margin-top: 80px;
     }
     
    
     #textePresentation {
       width: 90%;
       margin: 0 auto;
+      
     }
     
     
@@ -327,12 +331,17 @@ img {
       gap: 10px;
     }
     
+    #info ul {
+        flex-direction: column-reverse;
+        text-align: justify
+    }
    
     h1 {
-      font-size: 2.5em;
+      font-size: 2em;
     }
     
     p {
       font-size:1em;
     }
   }
+
