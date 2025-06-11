@@ -1,12 +1,118 @@
+<?php
+
+// Informations personnelles
+$nom = "Menguy Charlène";
+$email = "cmnovapro@gmail.com";
+$telephone = "07 54 20 50 52";
+$permis = "Permis B, véhicule personnel";
+$linkedin = "https://www.linkedin.com/in/CMNN";
+
+// À propos
+$apropos = "Si je devais me résumer en une phrase ? J’aime créer, innover et challenger l’existant.
+Passionnée de marketing digital, SEO et stratégies de marque, actuellement étudiante à la Normandie Web School. J’ai une obsession : aller au bout de mes ambitions et construire quelque chose de grand.
+Le challenge, c’est mon moteur. Aller plus loin, viser plus haut et concrétiser mes idées, c’est ce qui me fait vibrer au quotidien.";
+
+// Formations
+$formations = [
+    [
+        "date" => "2025-2027",
+        "titre" => "Bachelor Chef de projets digitaux",
+        "ecole" => "Normandie Web School - Le Havre",
+        "description" => [
+            "Formation centrée sur les techniques et stratégies de marketing et communication digitale."
+        ]
+    ],
+    [
+        "date" => "2023",
+        "titre" => "Bootcamp SEO",
+        "ecole" => "The Bridge - Nanterre",
+        "description" => [
+            "Formation intensive en référencement naturel et stratégies de contenu optimisées."
+        ]
+    ],
+    [
+        "date" => "2017",
+        "titre" => "BAC PRO Commerce",
+        "ecole" => "Lycée Jules Lescene - Le Havre",
+        "description" => []
+    ],
+];
+
+// Compétences
+$competences = [
+    "Techniques" => [
+        "SEO & Contenu : Audits, optimisation (balises, maillage, Core Web Vitals, SEO local), stratégie éditoriale (blogs, réseaux sociaux, acquisition multi-canal).",
+        "Analyse & Growth : Suivi des performances, benchmark, recommandations, optimisation du tunnel de conversion.",
+        "Marketing Digital : Emailing, UX/UI, création contenus (rédaction, graphisme, vidéo)."
+    ],
+    "Outils" => [
+        "Google Analytics, Search Console, Semrush, Ahrefs, Screaming Frog, Majestic, Yourtextguru.",
+        "WordPress, Canva, VS Code, CapCut, Pack Office, Creative Cloud (Illustrator, Indesign), HTML/CSS."
+    ],
+    "Gestion de projets" => [
+        "KANBAN, Trello, Slack, Google Meet.",
+        "Planification, suivi des délais, documentation (charte graphique, interviews), veille."
+    ]
+];
+
+// Expériences professionnelles
+$experiences = [
+    [
+        "poste" => "Consultante SEO",
+        "entreprise" => "Dipsé, Le Havre",
+        "type" => "Stage",
+        "date" => "06/2024 - 07/2023",
+        "missions" => [
+            "Réalisation d'audits SEO et élaboration d'une stratégie éditoriale.",
+            "Rédaction d'articles de blog optimisés SEO.",
+            "Participation au lancement d'une marque."
+        ]
+    ],
+    [
+        "poste" => "Consultante SEO",
+        "entreprise" => "Yulli&Friends, Paris",
+        "type" => "Stage",
+        "date" => "11/2023 - 12/2023",
+        "missions" => [
+            "Réalisation de benchmarks et audits SEO.",
+            "Configuration d'outils d'analyse.",
+            "Rédaction d'articles de blog optimisés SEO."
+        ]
+    ],
+    [
+        "poste" => "Chef d'équipe",
+        "entreprise" => "Normal, Boulogne-Billancourt",
+        "type" => "CDD",
+        "date" => "07/2023 - 10/2023",
+        "missions" => [
+            "Management.", "Gestion des stocks.", "Merchandising."
+        ]
+    ],
+    [
+        "poste" => "Vente & gestion commerciale",
+        "entreprise" => "Picard Surgelés, Printemps, Le temps des Cerises",
+        "type" => "CDD",
+        "date" => "12/2017 - 05/2023",
+        "missions" => [
+            "Encaissements, gestion des stocks, fidélisation client.",
+            "Analyse des performances commerciales.",
+            "Conseils clientèle et merchandising."
+        ]
+    ]
+];
+
+// Centres d’intérêt
+$interets = [
+    "Voyages : États-Unis, Afrique du Sud, Europe.",
+    "Art et Design : Illustration, art déco.",
+    "Nouvelles technologies : IA, veille digitale.",
+    "Langues : Anglais, Espagnol."
+];
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
-<?php
-// cv.php
-// definir mon cv
-$titre="mon cv";
 
-?>
 <head>
 
     <meta charset="UTF-8">
@@ -42,7 +148,7 @@ $titre="mon cv";
 
     <a href="#top" class="back-to-top">↑</a>
     
-    Menguy Charlène
+
         <nav>
             <div class="burger-menu">
                 <input type="checkbox" id="menu-toggle">
@@ -116,10 +222,10 @@ $titre="mon cv";
 
         <h3>T E C H N I Q U E S :</h3>
             <ul>
-                <li>- SEO & Contenu : Audits, optimisation (balises, maillage, Core Web Vitals, SEO local), stratégie éditoriale (blogs, réseaux sociaux, acquisition multi-canal).</li>
-                <li>- Analyse & Growth : Suivi des performances, benchmark, recommandations, opti-
+                <li> SEO & Contenu : Audits, optimisation (balises, maillage, Core Web Vitals, SEO local), stratégie éditoriale (blogs, réseaux sociaux, acquisition multi-canal).</li>
+                <li> Analyse & Growth : Suivi des performances, benchmark, recommandations, opti-
                     misation du tunnel de conversion.</li>
-                <li>- Marketing Digital : Emailing, UX/UI, création contenus (rédaction, graphisme,
+                <li>  Marketing Digital : Emailing, UX/UI, création contenus (rédaction, graphisme,
                     vidéo).</li>
             </ul>
 
@@ -131,9 +237,9 @@ $titre="mon cv";
         <h3>O U T I L S :</h3>
             <ul>
 
-                <li>- SEO & Analytics : Google Analytics, Search Console, Semrush, Ahrefs, Screaming
+                <li> SEO & Analytics : Google Analytics, Search Console, Semrush, Ahrefs, Screaming
                     Frog, Majestic, Yourtextguru.</li>
-                <li>- CMS & Création : WordPress, Canva, VS Code, CapCut, Pack Office, Creative Cloud (Illustrator, indesign) ,HTML/CSS.</li>
+                <li> CMS & Création : WordPress, Canva, VS Code, CapCut, Pack Office, Creative Cloud (Illustrator, indesign) ,HTML/CSS.</li>
             </ul>
 
         </article>
@@ -144,8 +250,8 @@ $titre="mon cv";
          <h3>G E S T I O N D E P R O J E T S :</h3>   
          <ul>
 
-                <li>- Agilité & Collaboration : KANBAN, Trello, Slack, Google Meet.</li>
-                <li>- Stratégie & Coordination : Planification, suivi des délais, documentation (charte graphique, interviews ) veille.</li>
+                <li> Agilité & Collaboration : KANBAN, Trello, Slack, Google Meet.</li>
+                <li> Stratégie & Coordination : Planification, suivi des délais, documentation (charte graphique, interviews ) veille.</li>
 
         </ul>
 
@@ -241,7 +347,7 @@ $titre="mon cv";
     </main>
 
     <footer>
-        <img src="assets/images/Fichier 15.svg" alt="Logo-nova-cmn">
+      
         <p>
             &copy; 2024 Exemple de Page Web. Tous droits réservés.
         </p>
